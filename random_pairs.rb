@@ -29,9 +29,4 @@ students = ["Chad Keller",
 "Jason Grigg",
 "Robert Hutchin"]
 
-number = (students.count / 2)
-
-until number == 0
-  puts "#{students.sample} and #{students.sample}"
-  number -= 1
-end
+puts students.shuffle.to_a.join("\n")

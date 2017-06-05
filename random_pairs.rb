@@ -28,4 +28,4 @@ students = ["Chad Keller",
 "Jason Grigg",
 "Robert Hutchin"]
 
-puts students.shuffle.to_a.join("\n")
+students.shuffle.each_slice(2) {|a| p a.join(" & ")}

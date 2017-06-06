@@ -7,4 +7,7 @@ students = ["Chad Keller", "Bradley Broge", "Oakley Peavler", "Zack Clark",
 "Steve Roma", "Amelia Royster", "Sean Shellie", "Jason Grigg",
 "Robert Hutchin"]
 
-students.shuffle.each_slice(2) {|a| p a.join(" & ")}
+puts "How many people in a group?\n"
+people = gets.to_i
+
+students.shuffle.each_slice(people) {|a| p a.join(" & ")}

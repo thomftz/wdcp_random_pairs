@@ -5,7 +5,7 @@ students = ["Chad Keller", "Bradley Broge", "Oakley Peavler", "Zack Clark",
 "Francis Walsh", "Matt Morgan", "Geoff Humphreys", "Michael Ashton",
 "Brittany Arsi", "Oresti Arsi", "Sam Caldwell", "Lorien Olive",
 "Steve Roma", "Amelia Royster", "Sean Shellie", "Jason Grigg",
-"Robert Hutchin"]
+"Robert Hutchins"]
 
 puts "How many people in a group?\n"
 people = gets.to_i

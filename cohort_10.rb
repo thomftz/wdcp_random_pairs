@@ -1,4 +1,4 @@
-$all_students = ["Chad Keller", "Bradley Broge", "Oakley Peavler", "Zack Clark",
+$cohort_10 = ["Chad Keller", "Bradley Broge", "Oakley Peavler", "Zack Clark",
 "Sara Wall", "Michael Prechter", "Dylan Andrew Blake", "Lula Goodwin",
 "Matthew McDonald", "Robert Garmhausen", "Eric Kanarr", "Tim Minge",
 "Ethan Jarrell", "Gary Williams", "Ethan Philipson", "Zoe Cooper",

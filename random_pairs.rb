@@ -9,7 +9,7 @@ if cohort == 10
   puts "Which group?\n\n"
   puts "1 for All of Cohort 10\n2 for React\n3 for Ruby\n4 for Java"
   key = gets.to_i - 1
-  groups = {'1': $all_students, '2': $react_students, '3': $ruby_students, '4': $java_students}
+  groups = {'1': $cohort_10, '2': $react_students, '3': $ruby_students, '4': $java_students}
 
   puts "How many people in a group?\n"
   people = gets.to_i

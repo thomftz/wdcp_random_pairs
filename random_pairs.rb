@@ -1,13 +1,26 @@
-students = ["Chad Keller", "Bradley Broge", "Oakley Peavler", "Zack Clark",
-"Sara Wall", "Michael Prechter", "Dylan Andrew Blake", "Lula Goodwin",
-"Matthew McDonald", "Robert Garmhausen", "Eric Kanarr", "Tim Minge",
-"Ethan Jarrell", "Gary Williams", "Ethan Philipson", "Zoe Cooper",
-"Francis Walsh", "Matt Morgan", "Geoff Humphreys", "Michael Ashton",
-"Brittany Arsi", "Oresti Arsi", "Sam Caldwell", "Lorien Olive",
-"Steve Roma", "Amelia Royster", "Sean Shellie", "Jason Grigg",
-"Robert Hutchins"]
+require_relative 'cohort_10.rb'
+require_relative 'cohort_11.rb'
 
-puts "How many people in a group?\n"
-people = gets.to_i
+puts "Which Cohort? (10 or 11)\n\n"
+cohort = gets.to_i
 
-students.shuffle.each_slice(people) {|a| p a.join(" & ")}
+if cohort == 10
+
+  puts "Which group?\n\n"
+  puts "1 for All of Cohort 10\n2 for React\n3 for Ruby\n4 for Java"
+  key = gets.to_i - 1
+  groups = {'1': $all_students, '2': $react_students, '3': $ruby_students, '4': $java_students}
+
+  puts "How many people in a group?\n"
+  people = gets.to_i
+
+  groups.values[key].shuffle.each_slice(people) {|a| p a.join(" & ")}
+
+elsif cohort == 11
+
+  puts "How many people in a group?\n"
+  people = gets.to_i
+
+  $cohort_11.shuffle.each_slice(people) {|a| p a.join(" & ")}
+
+end
